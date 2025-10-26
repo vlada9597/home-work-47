@@ -1,18 +1,84 @@
-# React + Vite
+# 🧩 React Form Validation Project - home-work-47
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Опис проєкту
+Цей проєкт створено для демонстрації роботи з формами у **React** з використанням бібліотек **Formik + Yup** та **React Hook Form**.  
+Він реалізує приклад простої форми реєстрації з кількома полями вводу, валідацією даних та відображенням повідомлень про помилки.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Функціональні можливості
+- Керування станом форми за допомогою **Formik** або **React Hook Form**  
+- Валідація даних із використанням **Yup**  
+- Відображення повідомлень про помилки біля відповідних полів  
+- Обробка подій відправлення форми  
+- Приклад альтернативної реалізації (Formik / React Hook Form)  
+- Зручний та зрозумілий інтерфейс користувача  
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🏗️ Структура проєкту
 
-Note: This will impact Vite dev & build performances.
+home-work-47/
+my-react-app/
+├── src/
+│ ├── components/
+│ │ ├── FormFormik.jsx
+│ │ ├── FormHook.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── package.json
+├── vite.config.js
+└── README.md
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Використані технології
+- **React 18**
+- **Vite** — швидке середовище розробки
+- **Formik** — бібліотека для роботи з формами  
+- **Yup** — бібліотека для валідації даних  
+- **React Hook Form** — альтернатива Formik для керування станом форм  
+
+---
+
+## 📦 Встановлення та запуск
+
+1. Клонуйте репозиторій:
+   git clone https://github.com/<твоє_ім’я_користувача>/<назва_репозиторію>.git
+   
+2.Перейдіть у папку проєкту:
+cd my-react-app
+
+3.Встановіть залежності:
+npm install
+
+4.Запустіть локальний сервер:
+npm run dev
+Відкрийте у браузері:
+http://localhost:5173
+
+🧠 Приклади форм
+✅ Formik + Yup
+Форма з трьома полями (ім’я, email, пароль) і перевіркою:
+
+Ім’я — обов’язкове
+
+Email — правильний формат
+
+Пароль — мінімум 6 символів
+
+Використано useFormik() і Yup.object() для визначення схеми валідації.
+
+✅ React Hook Form
+Форма реалізована з використанням хуку useForm():
+
+Просте керування станом
+
+Валідація через правила register
+
+Відображення помилок через errors
+
+🔗 Демо
+https://home-work-47.netlify.app/
